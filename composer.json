@@ -1,0 +1,19 @@
+{
+    "name": "marcosdipaolo/router",
+    "description": "A PHP Router package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Marcos Di Paolo",
+            "email": "marcosdipaolo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MDP\\": "src/"
+        }
+    }
+}
