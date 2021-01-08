@@ -29,6 +29,8 @@ use MDP\Router\Router;
 $config = new RouterConfiguration();
 // set the absolute path of the routes file
 $config->setRoutesFilePath(__DIR__ . '/routes.php');
+// set the controller's namespace
+$config->setControllersNamespace('App\\Controllers');
 // create the Router instance
 $router = Router::create($config);
 // direct the request to the rigth place
@@ -36,7 +38,7 @@ $router->direct();
 ```
 
 ### Routes file
-The routes file returns an associative array with the different http verbs as keys. Each of these keys are assigned an array of arrays, where each of those arrays contains two string elements, the first is the uri, and the second a string with the controller and the method joined by an `@`: `controller@method`.   
+The routes file returns an associative array with the different http verbs as keys. Each of these keys are assigned an array of arrays, where each of those arrays contains two string elements, the first is the uri, and the second a string with the controller and method joined by an `@`, like: `controller@method`.   
 If this second argument is a closure, the Router will execute it.
 ```php
 <?php
