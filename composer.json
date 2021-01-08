@@ -2,6 +2,8 @@
     "name": "marcosdipaolo/router",
     "description": "A PHP Router package",
     "type": "library",
+    "keywords": ["php","router"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Marcos Di Paolo",
