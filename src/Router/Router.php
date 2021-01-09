@@ -25,8 +25,8 @@ class Router
     private $patch = [];
     /** @var array $delete */
     private $delete = [];
-    /** @var string $routesFilePath */
-    private $routesFilePath;
+    /** @var string $controllersNamespace */
+    private $controllersNamespace;
 
     /**
      * Router constructor.
@@ -38,6 +38,7 @@ class Router
         if (!$path = $config->getRoutesFilePath()) {
             throw new RoutesFileNotFoundException();
         }
+        $this->controllersNamespace = $config->getControllersNamespace();
         $this->loadRoutes($path);
     }
 
@@ -187,15 +188,7 @@ class Router
      */
     private function resolveController($action): string
     {
-        return '\\App\\Http\\Controllers\\' . explode('@', $action)[0];
-    }
-
-    /**
-     * @param string $routesFilePath
-     */
-    public function setRoutesFilePath(string $routesFilePath): void
-    {
-        $this->routesFilePath = $routesFilePath;
+        return "{$this->controllersNamespace}\\" . explode('@', $action)[0];
     }
 
     /**

@@ -1,14 +1,12 @@
 <?php
 return [
     "get" => [
-        ['/', 'PageController@index'],
-        ['/mail', 'PageController@mail'],
-        ['/login', 'AuthController@loginForm'],
-        ['/register', 'UserController@registerForm'],
-        ['/logout', 'AuthController@logout'],
-        ['/about', 'PageController@about'],
+        ['/', 'PageController@home'],
+        ['/about', function(){
+            echo "<h1>Aboooouutttt!!!!</h1>";
+        }],
         ['/health', function(){
-            return 'I\'m healthy as a dog running backwards' ;
+            echo 'I\'m healthy as a dog running backwards' ;
         }]
     ],
     "post" => [
@@ -17,4 +15,3 @@ return [
         ['/login', 'AuthController@login']
     ],
 ];
-
