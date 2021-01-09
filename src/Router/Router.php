@@ -157,7 +157,7 @@ class Router
             // redirect to controller method
             $controllerMethod = $this->resolveMethod($action);
             $controller = $this->resolveController($action);
-            return (new $controller)->$controllerMethod();
+            return app()->get($controller)->$controllerMethod();
         } catch (Throwable $e) {
             throw $e;
         }
