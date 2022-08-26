@@ -3,6 +3,7 @@
 namespace MDP\Router;
 
 use Exception;
+use MDP\Container\Container;
 use MDP\Router\Exceptions\PageNotFoundRouterException;
 use MDP\Router\Exceptions\RoutesFileNotFoundException;
 use Throwable;
@@ -13,27 +14,21 @@ use Throwable;
  */
 class Router
 {
-    /** @var array $instances */
-    private static $instances = [];
-    /** @var array $get */
-    private $get = [];
-    /** @var array $post */
-    private $post = [];
-    /** @var array $put */
-    private $put = [];
-    /** @var array $patch */
-    private $patch = [];
-    /** @var array $delete */
-    private $delete = [];
-    /** @var string $controllersNamespace */
-    private $controllersNamespace;
+    private static array $instances = [];
+    private array $get = [];
+    private array $post = [];
+    private array $put = [];
+    private array $patch = [];
+    private array $delete = [];
+    private string $controllersNamespace;
 
     /**
      * Router constructor.
      * @param RouterConfiguration $config
+     * @param Container $container
      * @throws RoutesFileNotFoundException
      */
-    private function __construct(RouterConfiguration $config)
+    private function __construct(RouterConfiguration $config, private Container $container)
     {
         if (!$path = $config->getRoutesFilePath()) {
             throw new RoutesFileNotFoundException();
@@ -46,7 +41,7 @@ class Router
      * @param string $path
      * @throws RoutesFileNotFoundException
      */
-    public function loadRoutes(string $path)
+    public function loadRoutes(string $path): void
     {
         try {
             if (!is_file($path)) {
@@ -66,14 +61,15 @@ class Router
 
     /**
      * @param RouterConfiguration $config
-     * @return mixed|static
+     * @param Container $container
+     * @return null|static
      * @throws RoutesFileNotFoundException
      */
-    public static function create(RouterConfiguration $config)
+    public static function create(RouterConfiguration $config, Container $container): null|static
     {
         $cls = static::class;
         if (!isset(self::$instances[$cls])) {
-            self::$instances[$cls] = new static($config);
+            self::$instances[$cls] = new static($config, $container);
         }
 
         return self::$instances[$cls];
@@ -149,6 +145,7 @@ class Router
             }
 
             // if closure, execute it
+            /** @var array $requestMethod */
             $action = $this->$requestMethod[$route];
             if ($action instanceof \Closure) {
                 return $action();
@@ -157,8 +154,9 @@ class Router
             // redirect to controller method
             $controllerMethod = $this->resolveMethod($action);
             $controller = $this->resolveController($action);
-            return (new $controller)->$controllerMethod();
+            return $this->container->get($controller)->$controllerMethod();
         } catch (Throwable $e) {
+            // do something
             throw $e;
         }
     }

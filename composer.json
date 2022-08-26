@@ -11,11 +11,14 @@
         }
     ],
     "require": {
-        "php": ">=7.2"
+        "php": ">=8.0",
+        "marcosdipaolo/container": "dev-master",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "MDP\\": "src/"
+            "MDP\\": "src/",
+            "MDP\\Test\\": "test/"
         }
     }
 }
