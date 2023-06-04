@@ -3,7 +3,6 @@
 namespace MDP\Test\Router;
 
 use MDP\Container\Container;
-use MDP\Router\Exceptions\RoutesFileNotFoundException;
 use MDP\Router\Router;
 use MDP\Router\RouterConfiguration;
 use MDP\Test\Router\MockedService\MockedService;
@@ -19,7 +18,6 @@ class RouterTest extends TestCase
      * @param string|null $name
      * @param array $data
      * @param string $dataName
-     * @throws RoutesFileNotFoundException
      * @throws Throwable
      */
     public function __construct(?string $name = null, array $data = [], string $dataName = '')
@@ -27,7 +25,7 @@ class RouterTest extends TestCase
         parent::__construct($name, $data, $dataName);
 
         $this->router = Router::create(
-            $this->getRouterConfig(),
+            [MockedController::class],
             $this->getContainer());
     }
 
