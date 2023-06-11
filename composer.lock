@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33f0b4992bcb610904a0caa97081e794",
+    "content-hash": "ac806808cbc05a67f99d1be6a821177a",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -78,7 +78,7 @@
         },
         {
             "name": "marcosdipaolo/container",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/marcosdipaolo/container.git",
@@ -93,7 +93,6 @@
             "require": {
                 "psr/container": "^2.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -109,7 +108,7 @@
             ],
             "support": {
                 "issues": "https://github.com/marcosdipaolo/container/issues",
-                "source": "https://github.com/marcosdipaolo/container/tree/master"
+                "source": "https://github.com/marcosdipaolo/container/tree/1.0.0"
             },
             "time": "2022-08-26T01:36:33+00:00"
         },
@@ -1826,13 +1825,11 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "marcosdipaolo/container": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0"
+        "php": ">=8.2"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
