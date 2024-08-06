@@ -39,24 +39,10 @@ class RouterTest extends TestCase
         $this->assertTrue($this->router->direct());
     }
 
-    /**
-     * @return Container
-     */
     private function getContainer(): Container
     {
         $container = new Container();
         $container->set(MockedServiceApi::class, MockedService::class);
         return $container;
-    }
-
-    /**
-     * @return RouterConfiguration
-     */
-    private function getRouterConfig(): RouterConfiguration
-    {
-        $config = new RouterConfiguration();
-        $config->setRoutesFilePath(__DIR__ . '/mockedRoutes.php');
-        $config->setControllersNamespace("MDP\\Test\\Router");
-        return $config;
     }
 }
