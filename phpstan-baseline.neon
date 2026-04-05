@@ -1,0 +1,66 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 4
+			path: src/Http/Request.php
+
+		-
+			message: "#^Method MDP\\\\Router\\\\RouteCache\\:\\:load\\(\\) should return array\\<int, array\\<int\\|string, mixed\\>\\>\\|null but returns array\\|null\\.$#"
+			count: 1
+			path: src/Router/RouteCache.php
+
+		-
+			message: "#^Parameter \\#1 \\$method of class MDP\\\\Router\\\\RouteDefinition constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Parameter \\#2 \\$path of class MDP\\\\Router\\\\RouteDefinition constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Parameter \\#3 \\$action of class MDP\\\\Router\\\\RouteDefinition constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Parameter \\#4 \\$middleware of class MDP\\\\Router\\\\RouteDefinition constructor expects array\\<int, MDP\\\\Middleware\\\\MiddlewareInterface\\|string\\>, mixed given\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Parameter \\#5 \\$name of class MDP\\\\Router\\\\RouteDefinition constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Property MDP\\\\Router\\\\Router\\:\\:\\$globalMiddleware \\(array\\<int, MDP\\\\Middleware\\\\MiddlewareInterface\\>\\) does not accept array\\<int, MDP\\\\Middleware\\\\MiddlewareInterface\\|string\\>\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Router/Router.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Router/UrlGenerator.php
+
+		-
+			message: "#^Binary operation \"\\.\" between 'User ' and mixed results in an error\\.$#"
+			count: 1
+			path: test/Router/MockedController.php
+
+		-
+			message: "#^Property MDP\\\\Test\\\\Router\\\\MockedController\\:\\:\\$service is never read, only written\\.$#"
+			count: 1
+			path: test/Router/MockedController.php
+
+		-
+			message: "#^Call to method PHPUnit\\\\Framework\\\\Assert\\:\\:assertIsArray\\(\\) with array\\<int, array\\{method\\: string, path\\: string, action\\: string, name\\: string\\|null, middleware\\: array\\<int, MDP\\\\Middleware\\\\MiddlewareInterface\\|string\\>\\}\\> will always evaluate to true\\.$#"
+			count: 1
+			path: test/Router/RouterTest.php
