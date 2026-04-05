@@ -6,7 +6,7 @@ return [
             echo "<h1>Aboooouutttt!!!!</h1>";
         }],
         ['/health', function(){
-            echo 'I\'m healthy as a dog running backwards' ;
+            echo "I'm healthy as a dog running backwards" ;
         }]
     ],
     "post" => [

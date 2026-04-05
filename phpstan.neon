@@ -1,0 +1,15 @@
+parameters:
+  level: 9
+  paths:
+    - src
+    - test
+  excludePaths:
+    - vendor/
+  reportUnmatchedIgnoredErrors: true
+  checkMissingIterableValueType: true
+  checkGenericClassInNonGenericObjectType: true
+  tmpDir: var/phpstan
+  treatPhpDocTypesAsCertain: true
+
+includes:
+  - phar://phpstan.phar/conf/bleedingEdge.neon

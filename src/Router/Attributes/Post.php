@@ -9,6 +9,6 @@ class Post extends Route
 {
     public function __construct(string $path)
     {
-        parent::__construct($path, "post");
+        parent::__construct($path, "POST");
     }
 }

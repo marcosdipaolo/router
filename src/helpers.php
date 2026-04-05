@@ -9,6 +9,7 @@ if (!function_exists('getControllers')) {
         if (!$scan) {
             throw new Error("Controller directory does not exist");
         }
+
         array_splice($scan, 0, 2);
         return array_map(function($class) use ($namespace) {
             $classNoExt = str_replace(".php", "", $class);

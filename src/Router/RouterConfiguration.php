@@ -5,6 +5,7 @@ namespace MDP\Router;
 class RouterConfiguration
 {
     private string $routesFilePath;
+
     private string $controllersNamespace;
 
     public function getRoutesFilePath(): string
