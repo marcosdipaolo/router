@@ -13,7 +13,7 @@ class RouterConfiguration
         return $this->routesFilePath;
     }
 
-    public function setRoutesFilePath($routesFilePath): void
+    public function setRoutesFilePath(string $routesFilePath): void
     {
         $this->routesFilePath = $routesFilePath;
     }

@@ -25,7 +25,7 @@ class RouteCache
 
     /**
      * Load routes from cache
-     * @return array<int, array<mixed, mixed>>|null
+     * @return array<int, array<int|string, mixed>>|null
      */
     public function load(): ?array
     {

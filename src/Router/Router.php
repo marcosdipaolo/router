@@ -84,6 +84,7 @@ class Router
     public function registerRoutesFromControllerAttributes(array $controllers): void
     {
         foreach ($controllers as $controller) {
+            /** @var class-string $controller */
             $reflectionController = new ReflectionClass($controller);
             $methods = $reflectionController->getMethods();
 
@@ -108,13 +109,15 @@ class Router
      *
      * @param array<int, string> $controllers
      * @throws ReflectionException
+     * @return self
+     * @phpstan-return self
      */
     public static function create(
         array $controllers,
         Container $container,
         ?string $cacheDir = null,
         bool $cacheEnabled = true
-    ): static {
+    ) {
         $cls = static::class;
         if (!isset(self::$instances[$cls])) {
             self::$instances[$cls] = new static($controllers, $container, $cacheDir, $cacheEnabled);
@@ -258,7 +261,9 @@ class Router
      */
     public function middleware(string|MiddlewareInterface $middleware): self
     {
-        $this->globalMiddleware[] = $middleware;
+        /** @var array<int, string|MiddlewareInterface> $updated */
+        $updated = [...$this->globalMiddleware, $middleware];
+        $this->globalMiddleware = $updated;
         return $this;
     }
 

@@ -15,8 +15,9 @@ class MethodSpoofingMiddleware implements MiddlewareInterface
     {
         // Only check POST requests
         if ($request->getMethod() === 'POST') {
+            /** @var string|null $method */
             $method = $request->getPost($this->parameterName);
-            if ($method && in_array(strtoupper((string) $method), ['PUT', 'PATCH', 'DELETE'])) {
+            if ($method && in_array(strtoupper((string) $method), ['PUT', 'PATCH', 'DELETE'], true)) {
                 // Override the method via reflection
                 $reflectionMethod = new \ReflectionProperty($request, 'method');
                 $reflectionMethod->setAccessible(true);

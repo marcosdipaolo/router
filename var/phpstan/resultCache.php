@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1775401182,
+	'lastFullAnalysisTime' => 1775401464,
 	'meta' => array (
   'cacheVersion' => 'v12-linesToIgnore',
   'phpstanVersion' => '1.12.33',
@@ -501,12 +501,12 @@ return [
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Cannot cast mixed to string.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 38,
+       'line' => 39,
        'canBeIgnored' => true,
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 38,
+       'nodeLine' => 39,
        'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
        'identifier' => 'cast.string',
        'metadata' => 
@@ -515,39 +515,7 @@ return [
     )),
     1 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #1 $url of function parse_url expects string, mixed given.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 39,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 39,
-       'nodeType' => 'PhpParser\\Node\\Expr\\FuncCall',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Variable $_GET on left side of ?? always exists and is not nullable.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 40,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 40,
-       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
-       'identifier' => 'nullCoalesce.variable',
-       'metadata' => 
-      array (
-      ),
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Variable $_POST on left side of ?? always exists and is not nullable.',
+       'message' => 'Cannot cast mixed to string.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
        'line' => 41,
        'canBeIgnored' => true,
@@ -555,140 +523,38 @@ return [
        'traitFilePath' => NULL,
        'tip' => NULL,
        'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
-       'identifier' => 'nullCoalesce.variable',
+       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
+       'identifier' => 'cast.string',
        'metadata' => 
       array (
       ),
     )),
-    4 => 
+    2 => 
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Cannot cast mixed to string.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 139,
+       'line' => 143,
        'canBeIgnored' => true,
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 139,
+       'nodeLine' => 143,
        'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
        'identifier' => 'cast.string',
        'metadata' => 
       array (
       ),
     )),
-    5 => 
+    3 => 
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Cannot cast mixed to string.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 144,
+       'line' => 148,
        'canBeIgnored' => true,
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 144,
-       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
-       'identifier' => 'cast.string',
-       'metadata' => 
-      array (
-      ),
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Cannot cast mixed to string.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 150,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 150,
-       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
-       'identifier' => 'cast.string',
-       'metadata' => 
-      array (
-      ),
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Cannot cast mixed to string.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 152,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 152,
-       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
-       'identifier' => 'cast.string',
-       'metadata' => 
-      array (
-      ),
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Cannot cast mixed to string.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'line' => 155,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 155,
-       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
-       'identifier' => 'cast.string',
-       'metadata' => 
-      array (
-      ),
-    )),
-  ),
-  '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Response.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Constant MDP\\Http\\Response::STATUS_MESSAGES is unused.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Response.php',
-       'line' => 17,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Response.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/developing-extensions/always-used-class-constants',
-       'nodeLine' => 5,
-       'nodeType' => 'PHPStan\\Node\\ClassConstantsNode',
-       'identifier' => 'classConstant.unused',
-       'metadata' => 
-      array (
-      ),
-    )),
-  ),
-  '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Cannot cast mixed to string.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php',
-       'line' => 19,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 19,
-       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
-       'identifier' => 'cast.string',
-       'metadata' => 
-      array (
-      ),
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Cannot cast mixed to string.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 23,
+       'nodeLine' => 148,
        'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
        'identifier' => 'cast.string',
        'metadata' => 
@@ -799,83 +665,32 @@ return [
     )),
     5 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #1 $objectOrClass of class ReflectionClass constructor expects class-string<T of object>|T of object, string given.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
-       'line' => 87,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 87,
-       'nodeType' => 'PhpParser\\Node\\Expr\\New_',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Unsafe usage of new static().',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
-       'line' => 120,
+       'line' => 123,
        'canBeIgnored' => true,
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
        'traitFilePath' => NULL,
        'tip' => 'See: https://phpstan.org/blog/solving-phpstan-error-unsafe-usage-of-new-static',
-       'nodeLine' => 120,
+       'nodeLine' => 123,
        'nodeType' => 'PhpParser\\Node\\Expr\\New_',
        'identifier' => 'new.static',
        'metadata' => 
       array (
       ),
     )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Router\\Router::create() should return static(MDP\\Router\\Router) but returns MDP\\Router\\Router.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
-       'line' => 123,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 123,
-       'nodeType' => 'PhpParser\\Node\\Stmt\\Return_',
-       'identifier' => 'return.type',
-       'metadata' => 
-      array (
-      ),
-    )),
-    8 => 
+    6 => 
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Property MDP\\Router\\Router::$globalMiddleware (array<int, MDP\\Middleware\\MiddlewareInterface>) does not accept array<int, MDP\\Middleware\\MiddlewareInterface|string>.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
-       'line' => 261,
+       'line' => 266,
        'canBeIgnored' => true,
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 261,
+       'nodeLine' => 266,
        'nodeType' => 'PHPStan\\Node\\PropertyAssignNode',
        'identifier' => 'assign.propertyType',
-       'metadata' => 
-      array (
-      ),
-    )),
-  ),
-  '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouterConfiguration.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Router\\RouterConfiguration::setRoutesFilePath() has parameter $routesFilePath with no type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouterConfiguration.php',
-       'line' => 16,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouterConfiguration.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 16,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.parameter',
        'metadata' => 
       array (
       ),
@@ -885,201 +700,16 @@ return [
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Router\\UrlGenerator::route() has parameter $parameters with no value type specified in iterable type array.',
+       'message' => 'Cannot cast mixed to string.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/UrlGenerator.php',
-       'line' => 19,
+       'line' => 31,
        'canBeIgnored' => true,
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/UrlGenerator.php',
        'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 19,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-  ),
-  '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\FileLogger::log() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'line' => 20,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 20,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\FileLogger::error() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 29,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\FileLogger::warning() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'line' => 34,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 34,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\FileLogger::info() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'line' => 39,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 39,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\FileLogger::debug() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'line' => 44,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 44,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-  ),
-  '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\LoggerInterface::log() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'line' => 7,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 7,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\LoggerInterface::error() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'line' => 9,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 9,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\LoggerInterface::warning() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'line' => 11,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 11,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\LoggerInterface::info() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'line' => 13,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 13,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Utilities\\LoggerInterface::debug() has parameter $context with no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'line' => 15,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 15,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-    )),
-  ),
-  '/Users/marcosdipaolo/Documents/dev/own/router/src/helpers.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Function getControllers() return type has no value type specified in iterable type array.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/src/helpers.php',
-       'line' => 4,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/helpers.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 4,
-       'nodeType' => 'PHPStan\\Node\\InFunctionNode',
-       'identifier' => 'missingType.iterableValue',
+       'tip' => NULL,
+       'nodeLine' => 31,
+       'nodeType' => 'PhpParser\\Node\\Expr\\Cast\\String_',
+       'identifier' => 'cast.string',
        'metadata' => 
       array (
       ),
@@ -1124,150 +754,6 @@ return [
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testBasicGetRequest() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 43,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 43,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testNotFoundRoute() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 55,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 55,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testRouteWithParameters() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 67,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 67,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testPostRequest() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 78,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 78,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testPutRequest() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 89,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 89,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testPatchRequest() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 100,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 100,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testDeleteRequest() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 111,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 111,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testRouteParametersExtracted() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 122,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 122,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testListRoutes() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 134,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 134,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    9 => 
-    \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Call to method PHPUnit\\Framework\\Assert::assertIsArray() with array<int, array{method: string, path: string, action: string, name: string|null, middleware: array<int, MDP\\Middleware\\MiddlewareInterface|string>}> will always evaluate to true.',
        'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
        'line' => 138,
@@ -1278,166 +764,6 @@ return [
        'nodeLine' => 138,
        'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
        'identifier' => 'method.alreadyNarrowedType',
-       'metadata' => 
-      array (
-      ),
-    )),
-    10 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testUrlGeneration() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 149,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 149,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    11 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testRequestQueryParameters() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 164,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 164,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    12 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testRequestJsonBody() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 173,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 173,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    13 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #6 $body of class MDP\\Http\\Request constructor expects string|null, string|false given.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 176,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 176,
-       'nodeType' => 'PhpParser\\Node\\Expr\\New_',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-    )),
-    14 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testResponseHeaders() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 186,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 186,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    15 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testCorsHeaders() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 197,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 197,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    16 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #2 $haystack of method PHPUnit\\Framework\\Assert::assertStringContainsString() expects string, string|null given.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 203,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 203,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-    )),
-    17 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testSecurityHeaders() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 209,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 209,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    18 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testJsonResponse() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 221,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 221,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
-       'metadata' => 
-      array (
-      ),
-    )),
-    19 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method MDP\\Test\\Router\\RouterTest::testDebugMode() has no return type specified.',
-       'file' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'line' => 234,
-       'canBeIgnored' => true,
-       'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 234,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.return',
        'metadata' => 
       array (
       ),
@@ -1615,7 +941,7 @@ return [
        'data' => 
       array (
         0 => 'http_response_code',
-        1 => 129,
+        1 => 112,
       ),
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Response.php',
        'collectorType' => 'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector',
@@ -1927,7 +1253,7 @@ return [
        'data' => 
       array (
         0 => 'array_splice',
-        1 => 13,
+        1 => 16,
       ),
        'filePath' => '/Users/marcosdipaolo/Documents/dev/own/router/src/helpers.php',
        'collectorType' => 'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector',
@@ -1946,7 +1272,7 @@ return [
 	'dependencies' => array (
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php' => 
   array (
-    'fileHash' => '37807b2ceac9b32c17f0a8c9094105e55541316b',
+    'fileHash' => 'a8dcf1a1bfd42733997276d101bb8074e02b9f8f',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/CorsMiddleware.php',
@@ -1960,7 +1286,7 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Response.php' => 
   array (
-    'fileHash' => 'aa8ffe2094b5dad71bb22db2c6692aa649d79ba3',
+    'fileHash' => 'd183ed6752b241375e3b0accd038846d640a8723',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/CorsMiddleware.php',
@@ -1981,7 +1307,7 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php' => 
   array (
-    'fileHash' => 'b04096b6550b6f5fa11fedd90fa49fb80ff9b94f',
+    'fileHash' => '57c7c8205963db655b558756e5b6d108be911ec1',
     'dependentFiles' => 
     array (
     ),
@@ -2066,7 +1392,7 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouteCache.php' => 
   array (
-    'fileHash' => '31db6e9c9effce4b779ecda7f814d5d2e619e5ec',
+    'fileHash' => '8935f84a720f7e14397908199b3d6b528611670b',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
@@ -2104,7 +1430,7 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php' => 
   array (
-    'fileHash' => '802fa976b26c98080e177767ec818a84383e716e',
+    'fileHash' => '53953bbdc98ea1254557bb3fafe7ffa7a1ea2a2c',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php',
@@ -2112,14 +1438,14 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouterConfiguration.php' => 
   array (
-    'fileHash' => '832b5d2458ac87dd4a9acf699165df25df37fac3',
+    'fileHash' => '55213f0fa881ce4fe6acbdb97a7d9f5dfb46497b',
     'dependentFiles' => 
     array (
     ),
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/UrlGenerator.php' => 
   array (
-    'fileHash' => '4d584088563f977ac4d0b47552256523ca816742',
+    'fileHash' => 'ef41c99799dd0c86f8cb2ba22c3f8ba119e7b4ae',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php',
@@ -2128,14 +1454,14 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php' => 
   array (
-    'fileHash' => '96aff09df3501808546096c7640957c2b32c8ce1',
+    'fileHash' => '539987fb8518f584257d4626e31f539297ce880e',
     'dependentFiles' => 
     array (
     ),
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php' => 
   array (
-    'fileHash' => '71978c6513543e86ef0aba861237cacf70d1acdb',
+    'fileHash' => '95e6c51c42cfec02e6a9ddac6504579832fbda14',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php',
@@ -2143,7 +1469,7 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/src/helpers.php' => 
   array (
-    'fileHash' => '11f300dcbbad7ed1dbb2a399124ae217847383c1',
+    'fileHash' => '0da90a9ddfc5fd57768efd2e9bcd51107bd5b886',
     'dependentFiles' => 
     array (
     ),
@@ -2183,7 +1509,7 @@ return [
   ),
   '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php' => 
   array (
-    'fileHash' => '8704796fcf9dfb541c9c18b28a368945a469c2d2',
+    'fileHash' => 'e3ee75f2b4a0d201107d56017637c68613cb067a',
     'dependentFiles' => 
     array (
     ),
@@ -4193,7 +3519,7 @@ return [
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
      * Load routes from cache
-     * @return array<int, array<mixed, mixed>>|null
+     * @return array<int, array<int|string, mixed>>|null
      */',
              'namespace' => 'MDP\\Router',
              'uses' => 
@@ -6165,6 +5491,8 @@ return [
      *
      * @param array<int, string> $controllers
      * @throws ReflectionException
+     * @return self
+     * @phpstan-return self
      */',
              'namespace' => 'MDP\\Router',
              'uses' => 
@@ -6190,7 +5518,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => true,
-           'returnType' => 'static',
+           'returnType' => NULL,
            'parameters' => 
           array (
             0 => 
@@ -6785,7 +6113,7 @@ return [
             0 => 
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'routesFilePath',
-               'type' => NULL,
+               'type' => 'string',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -6920,7 +6248,7 @@ return [
      * Generate a URL from a route name and parameters
      *
      * @param string $name The route name
-     * @param array $parameters Parameters to fill in the route
+     * @param array<string, mixed> $parameters Parameters to fill in the route
      * @return string The generated URL
      * @throws \\InvalidArgumentException if route is not found
      */',
@@ -7097,7 +6425,19 @@ return [
         1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'log',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @param array<string, mixed> $context
+     */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7148,7 +6488,17 @@ return [
         2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'error',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7188,7 +6538,17 @@ return [
         3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'warning',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7228,7 +6588,17 @@ return [
         4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'info',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7268,7 +6638,17 @@ return [
         5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'debug',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7343,7 +6723,21 @@ return [
         0 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'log',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Log a message with context
+     *
+     * @param array<string, mixed> $context
+     */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7394,7 +6788,17 @@ return [
         1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'error',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7434,7 +6838,17 @@ return [
         2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'warning',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7474,7 +6888,17 @@ return [
         3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'info',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7514,7 +6938,17 @@ return [
         4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'debug',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @param array<string, mixed> $context */',
+             'namespace' => 'MDP\\Utilities',
+             'uses' => 
+            array (
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -7559,7 +6993,19 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
        'name' => 'getControllers',
-       'phpDoc' => NULL,
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+     * @return array<int, string>
+     */',
+         'namespace' => NULL,
+         'uses' => 
+        array (
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'byRef' => false,
        'returnType' => 'array',
        'parameters' => 
@@ -8114,7 +7560,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8153,7 +7599,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8192,7 +7638,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8231,7 +7677,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8270,7 +7716,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8309,7 +7755,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8348,7 +7794,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8387,7 +7833,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8426,7 +7872,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8465,7 +7911,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8504,7 +7950,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8543,7 +7989,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8582,7 +8028,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8621,7 +8067,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8660,7 +8106,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8699,7 +8145,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),
@@ -8738,7 +8184,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => NULL,
+           'returnType' => 'void',
            'parameters' => 
           array (
           ),

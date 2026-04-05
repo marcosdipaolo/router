@@ -2,6 +2,6 @@
 
 // variadic-method-MDP\Router\RouteDefinition-getMiddleware-/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouteDefinition.php
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => '1775400769-v4',
+   'variableKey' => '1775401206-v4',
    'data' => false,
 ));

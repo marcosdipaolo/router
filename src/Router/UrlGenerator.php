@@ -12,7 +12,7 @@ class UrlGenerator
      * Generate a URL from a route name and parameters
      *
      * @param string $name The route name
-     * @param array $parameters Parameters to fill in the route
+     * @param array<string, mixed> $parameters Parameters to fill in the route
      * @return string The generated URL
      * @throws \InvalidArgumentException if route is not found
      */
@@ -28,10 +28,10 @@ class UrlGenerator
 
         // Replace named parameters in the path
         foreach ($parameters as $key => $value) {
-            $url = str_replace('{' . $key . '}', $value, $url);
+            $url = str_replace('{' . $key . '}', (string) $value, $url);
         }
 
-        return $this->basePath . $url;
+        return ($this->basePath ?? '') . $url;
     }
 
     /**

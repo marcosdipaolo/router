@@ -17,6 +17,9 @@ class FileLogger implements LoggerInterface
         }
     }
 
+    /**
+     * @param array<string, mixed> $context
+     */
     public function log(string $level, string $message, array $context = []): void
     {
         $timestamp = date($this->dateFormat);
@@ -26,21 +29,25 @@ class FileLogger implements LoggerInterface
         file_put_contents($this->logFile, $logMessage, FILE_APPEND);
     }
 
+    /** @param array<string, mixed> $context */
     public function error(string $message, array $context = []): void
     {
         $this->log('ERROR', $message, $context);
     }
 
+    /** @param array<string, mixed> $context */
     public function warning(string $message, array $context = []): void
     {
         $this->log('WARNING', $message, $context);
     }
 
+    /** @param array<string, mixed> $context */
     public function info(string $message, array $context = []): void
     {
         $this->log('INFO', $message, $context);
     }
 
+    /** @param array<string, mixed> $context */
     public function debug(string $message, array $context = []): void
     {
         $this->log('DEBUG', $message, $context);

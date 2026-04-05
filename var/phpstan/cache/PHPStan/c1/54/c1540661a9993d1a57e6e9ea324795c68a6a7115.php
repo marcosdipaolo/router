@@ -53,7 +53,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/MethodSpoofingMiddleware.php' => 
     array (
-      0 => 'b04096b6550b6f5fa11fedd90fa49fb80ff9b94f',
+      0 => '57c7c8205963db655b558756e5b6d108be911ec1',
       1 => 
       array (
         0 => 'mdp\\middleware\\methodspoofingmiddleware',
@@ -69,7 +69,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/FileLogger.php' => 
     array (
-      0 => '96aff09df3501808546096c7640957c2b32c8ce1',
+      0 => '539987fb8518f584257d4626e31f539297ce880e',
       1 => 
       array (
         0 => 'mdp\\utilities\\filelogger',
@@ -90,7 +90,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Utilities/LoggerInterface.php' => 
     array (
-      0 => '71978c6513543e86ef0aba861237cacf70d1acdb',
+      0 => '95e6c51c42cfec02e6a9ddac6504579832fbda14',
       1 => 
       array (
         0 => 'mdp\\utilities\\loggerinterface',
@@ -109,7 +109,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Response.php' => 
     array (
-      0 => 'aa8ffe2094b5dad71bb22db2c6692aa649d79ba3',
+      0 => 'd183ed6752b241375e3b0accd038846d640a8723',
       1 => 
       array (
         0 => 'mdp\\http\\response',
@@ -137,7 +137,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php' => 
     array (
-      0 => '37807b2ceac9b32c17f0a8c9094105e55541316b',
+      0 => 'a8dcf1a1bfd42733997276d101bb8074e02b9f8f',
       1 => 
       array (
         0 => 'mdp\\http\\request',
@@ -182,7 +182,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/helpers.php' => 
     array (
-      0 => '11f300dcbbad7ed1dbb2a399124ae217847383c1',
+      0 => '0da90a9ddfc5fd57768efd2e9bcd51107bd5b886',
       1 => 
       array (
       ),
@@ -196,7 +196,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouterConfiguration.php' => 
     array (
-      0 => '832b5d2458ac87dd4a9acf699165df25df37fac3',
+      0 => '55213f0fa881ce4fe6acbdb97a7d9f5dfb46497b',
       1 => 
       array (
         0 => 'mdp\\router\\routerconfiguration',
@@ -239,7 +239,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/UrlGenerator.php' => 
     array (
-      0 => '4d584088563f977ac4d0b47552256523ca816742',
+      0 => 'ef41c99799dd0c86f8cb2ba22c3f8ba119e7b4ae',
       1 => 
       array (
         0 => 'mdp\\router\\urlgenerator',
@@ -411,7 +411,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php' => 
     array (
-      0 => '802fa976b26c98080e177767ec818a84383e716e',
+      0 => '53953bbdc98ea1254557bb3fafe7ffa7a1ea2a2c',
       1 => 
       array (
         0 => 'mdp\\router\\router',
@@ -442,7 +442,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Router/RouteCache.php' => 
     array (
-      0 => '31db6e9c9effce4b779ecda7f814d5d2e619e5ec',
+      0 => '8935f84a720f7e14397908199b3d6b528611670b',
       1 => 
       array (
         0 => 'mdp\\router\\routecache',

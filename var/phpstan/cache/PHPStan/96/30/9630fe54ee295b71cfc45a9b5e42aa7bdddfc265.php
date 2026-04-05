@@ -2,6 +2,6 @@
 
 // variadic-method-MDP\Router\Router-matchRoute-/Users/marcosdipaolo/Documents/dev/own/router/src/Router/Router.php
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => '1775400750-v4',
+   'variableKey' => '1775401448-v4',
    'data' => false,
 ));

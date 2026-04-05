@@ -35,10 +35,14 @@ class Request
         ?array $headers = null,
         ?string $body = null
     ) {
-        $this->method = $method ?? (string) ($_SERVER['REQUEST_METHOD'] ?? 'GET');
-        $this->uri = $uri ?? (string) (parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/');
-        $this->queryParams = $queryParams ?? ($_GET ?? []);
-        $this->postData = $postData ?? ($_POST ?? []);
+        /** @var string $method */
+        $method = $method ?? (string) ($_SERVER['REQUEST_METHOD'] ?? 'GET');
+        /** @var string $uri */
+        $uri = $uri ?? (string) (parse_url((string) ($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_PATH) ?: '/');
+        $this->method = $method;
+        $this->uri = $uri;
+        $this->queryParams = $queryParams ?? (array) $_GET;
+        $this->postData = $postData ?? (array) $_POST;
         $this->headers = $headers ?? $this->parseHeaders();
         $this->body = $body ?? (file_get_contents('php://input') ?: '');
     }
@@ -146,12 +150,18 @@ class Request
 
     public function getIP(): string
     {
-        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-            return (string) $_SERVER['HTTP_CLIENT_IP'];
-        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-            return explode(',', (string) $_SERVER['HTTP_X_FORWARDED_FOR'])[0];
+        /** @var string|null $clientIp */
+        $clientIp = $_SERVER['HTTP_CLIENT_IP'] ?? null;
+        if (!empty($clientIp)) {
+            return (string) $clientIp;
         }
-
-        return (string) ($_SERVER['REMOTE_ADDR'] ?? '');
+        /** @var string|null $forwardedFor */
+        $forwardedFor = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? null;
+        if (!empty($forwardedFor)) {
+            return explode(',', (string) $forwardedFor)[0];
+        }
+        /** @var string|null $remoteAddr */
+        $remoteAddr = $_SERVER['REMOTE_ADDR'] ?? null;
+        return (string) $remoteAddr;
     }
 }

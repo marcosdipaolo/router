@@ -20,7 +20,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/test/Router/RouterTest.php' => 
     array (
-      0 => '8704796fcf9dfb541c9c18b28a368945a469c2d2',
+      0 => 'e3ee75f2b4a0d201107d56017637c68613cb067a',
       1 => 
       array (
         0 => 'mdp\\test\\router\\routertest',

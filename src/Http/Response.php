@@ -13,25 +13,8 @@ class Response
 
     private bool $headersSent = false;
 
-    /** @var array<int, string> */
-    private const STATUS_MESSAGES = [
-        200 => 'OK',
-        201 => 'Created',
-        204 => 'No Content',
-        301 => 'Moved Permanently',
-        302 => 'Found',
-        304 => 'Not Modified',
-        400 => 'Bad Request',
-        401 => 'Unauthorized',
-        403 => 'Forbidden',
-        404 => 'Not Found',
-        405 => 'Method Not Allowed',
-        422 => 'Unprocessable Entity',
-        500 => 'Internal Server Error',
-        501 => 'Not Implemented',
-        502 => 'Bad Gateway',
-        503 => 'Service Unavailable',
-    ];
+    // Status messages map - useful for status code descriptions
+    // private const STATUS_MESSAGES = [...]
 
     public function setStatusCode(int $code): self
     {

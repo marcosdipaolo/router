@@ -40,7 +40,7 @@ class RouterTest extends TestCase
     /**
      * Test basic GET request
      */
-    public function testBasicGetRequest()
+    public function testBasicGetRequest(): void
     {
         $request = new Request('GET', '/');
         $response = $this->router->direct($request);
@@ -52,7 +52,7 @@ class RouterTest extends TestCase
     /**
      * Test 404 Not Found
      */
-    public function testNotFoundRoute()
+    public function testNotFoundRoute(): void
     {
         $request = new Request('GET', '/notfoundroute');
         $response = $this->router->direct($request);
@@ -64,7 +64,7 @@ class RouterTest extends TestCase
     /**
      * Test route with parameters
      */
-    public function testRouteWithParameters()
+    public function testRouteWithParameters(): void
     {
         $request = new Request('GET', '/users/123');
         $response = $this->router->direct($request);
@@ -75,7 +75,7 @@ class RouterTest extends TestCase
     /**
      * Test POST request
      */
-    public function testPostRequest()
+    public function testPostRequest(): void
     {
         $request = new Request('POST', '/users', [], ['name' => 'John']);
         $response = $this->router->direct($request);
@@ -86,7 +86,7 @@ class RouterTest extends TestCase
     /**
      * Test PUT request
      */
-    public function testPutRequest()
+    public function testPutRequest(): void
     {
         $request = new Request('PUT', '/users/123', [], [], [], '{"name":"Jane"}');
         $response = $this->router->direct($request);
@@ -97,7 +97,7 @@ class RouterTest extends TestCase
     /**
      * Test PATCH request
      */
-    public function testPatchRequest()
+    public function testPatchRequest(): void
     {
         $request = new Request('PATCH', '/users/123', [], [], [], '{"active":true}');
         $response = $this->router->direct($request);
@@ -108,7 +108,7 @@ class RouterTest extends TestCase
     /**
      * Test DELETE request
      */
-    public function testDeleteRequest()
+    public function testDeleteRequest(): void
     {
         $request = new Request('DELETE', '/users/123');
         $response = $this->router->direct($request);
@@ -119,7 +119,7 @@ class RouterTest extends TestCase
     /**
      * Test that route parameters are accessible
      */
-    public function testRouteParametersExtracted()
+    public function testRouteParametersExtracted(): void
     {
         $request = new Request('GET', '/users/456');
         $response = $this->router->direct($request);
@@ -131,7 +131,7 @@ class RouterTest extends TestCase
     /**
      * Test listing routes for debugging
      */
-    public function testListRoutes()
+    public function testListRoutes(): void
     {
         $routes = $this->router->listRoutes();
 
@@ -146,7 +146,7 @@ class RouterTest extends TestCase
     /**
      * Test URL generation with reverse routing
      */
-    public function testUrlGeneration()
+    public function testUrlGeneration(): void
     {
         // Routes don't have names by default, so we'll test that the generator works
         // by checking it doesn't throw an error for a route that doesn't exist
@@ -161,7 +161,7 @@ class RouterTest extends TestCase
     /**
      * Test request with query parameters
      */
-    public function testRequestQueryParameters()
+    public function testRequestQueryParameters(): void
     {
         $request = new Request('GET', '/search', ['q' => 'test']);
         $this->assertEquals('test', $request->getQuery('q'));
@@ -170,9 +170,9 @@ class RouterTest extends TestCase
     /**
      * Test request JSON body parsing
      */
-    public function testRequestJsonBody()
+    public function testRequestJsonBody(): void
     {
-        $jsonBody = json_encode(['name' => 'John', 'email' => 'john@example.com']);
+        $jsonBody = json_encode(['name' => 'John', 'email' => 'john@example.com']) ?: '';
         $request = new Request('POST', '/users', [], [], ['Content-Type' => 'application/json'], $jsonBody);
 
         $data = $request->getJsonBody();
@@ -183,7 +183,7 @@ class RouterTest extends TestCase
     /**
      * Test response headers
      */
-    public function testResponseHeaders()
+    public function testResponseHeaders(): void
     {
         $response = new Response();
         $response->setHeader('X-Custom-Header', 'custom-value');
@@ -194,19 +194,20 @@ class RouterTest extends TestCase
     /**
      * Test CORS response headers
      */
-    public function testCorsHeaders()
+    public function testCorsHeaders(): void
     {
         $response = new Response();
         $response->addCorsHeaders('https://example.com');
 
         $this->assertEquals('https://example.com', $response->getHeader('Access-Control-Allow-Origin'));
-        $this->assertStringContainsString('GET', $response->getHeader('Access-Control-Allow-Methods'));
+        $corsHeader = $response->getHeader('Access-Control-Allow-Methods') ?? '';
+        $this->assertStringContainsString('GET', $corsHeader);
     }
 
     /**
      * Test security headers
      */
-    public function testSecurityHeaders()
+    public function testSecurityHeaders(): void
     {
         $response = new Response();
         $response->addSecurityHeaders();
@@ -218,7 +219,7 @@ class RouterTest extends TestCase
     /**
      * Test JSON response
      */
-    public function testJsonResponse()
+    public function testJsonResponse(): void
     {
         $response = new Response();
         $response->json(['status' => 'success', 'data' => ['id' => 1]]);
@@ -231,7 +232,7 @@ class RouterTest extends TestCase
     /**
      * Test debug mode
      */
-    public function testDebugMode()
+    public function testDebugMode(): void
     {
         $this->router->debug(true);
         

@@ -1,6 +1,9 @@
 <?php
 
 if (!function_exists('getControllers')) {
+    /**
+     * @return array<int, string>
+     */
     function getControllers(
         string $controllersDirectory = __DIR__ . "/src/Http/Controllers", 
         string $namespace = "App\\Http\\Controllers\\"
