@@ -1272,7 +1272,7 @@ return [
 	'dependencies' => array (
   '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php' => 
   array (
-    'fileHash' => 'a8dcf1a1bfd42733997276d101bb8074e02b9f8f',
+    'fileHash' => '90a7fdc77b0af1e94a9442288a7c59391207be96',
     'dependentFiles' => 
     array (
       0 => '/Users/marcosdipaolo/Documents/dev/own/router/src/Middleware/CorsMiddleware.php',

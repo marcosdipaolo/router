@@ -155,11 +155,13 @@ class Request
         if (!empty($clientIp)) {
             return (string) $clientIp;
         }
+
         /** @var string|null $forwardedFor */
         $forwardedFor = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? null;
         if (!empty($forwardedFor)) {
             return explode(',', (string) $forwardedFor)[0];
         }
+
         /** @var string|null $remoteAddr */
         $remoteAddr = $_SERVER['REMOTE_ADDR'] ?? null;
         return (string) $remoteAddr;

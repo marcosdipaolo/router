@@ -137,7 +137,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/marcosdipaolo/Documents/dev/own/router/src/Http/Request.php' => 
     array (
-      0 => 'a8dcf1a1bfd42733997276d101bb8074e02b9f8f',
+      0 => '90a7fdc77b0af1e94a9442288a7c59391207be96',
       1 => 
       array (
         0 => 'mdp\\http\\request',

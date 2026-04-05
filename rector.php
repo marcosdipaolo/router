@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Rector\Config\RectorConfig;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
+use Rector\Php74\Rector\Assign\NullCoalescingOperatorRector;
 
 return RectorConfig::configure()
     ->withPaths([
@@ -13,6 +14,7 @@ return RectorConfig::configure()
     ])
     ->withSkip([
         __DIR__ . '/vendor',
+        NullCoalescingOperatorRector::class, // Skip: creates new PHPStan errors with function parameters
     ])
     ->withPhpVersion(\Rector\ValueObject\PhpVersion::PHP_82)
     ->withSets([
